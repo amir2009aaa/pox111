@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONKEY SHOP 2026 — Твоя личная макака здесь!</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Comic Sans MS', cursive; /* Для пущего абсурда */
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(45deg, #ffcc00, #ff6600);
+            padding: 50px;
+            text-shadow: 2px 2px 0px #000;
+        }
+
+        h1 { font-size: 3rem; margin: 0; }
+        .subtitle { font-size: 1.2rem; font-weight: bold; }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .monkey-card {
+            background: #2a2a2a;
+            border: 4px solid #ffcc00;
+            border-radius: 20px;
+            margin: 15px;
+            width: 280px;
+            transition: 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .monkey-card:hover {
+            transform: rotate(5deg) scale(1.1);
+            background: #333;
+        }
+
+        .monkey-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .info { padding: 15px; }
+
+        .price {
+            font-size: 1.5rem;
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background: red;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+        }
+
+        .buy-button {
+            background: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        footer { padding: 50px; color: #666; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍌 MONKEY SHOP 2026</h1>
+    <p class="subtitle">Хватит эволюционировать в одиночку — купи напарника!</p>
+</header>
+
+<div class="container">
+
+    <!-- Обезьяна 1 -->
+    <div class="monkey-card" onclick="alert('Ошибка: Обезьяна убежала из корзины!')">
+        <div class="badge">ХИТ</div>
+<img src="img/monkey2.jpg" alt="Прогер-макака">
+
+        <div class="info">
+            <h3>Прогер-макака-Коля</h3>
+            <p>типичная мамкака сосалка отдам даром.</p>
+            <p class="price">0.5 BTC</p>
+            <button class="buy-button">ЗАБРАТЬ</button>
+        </div>
+    </div>
+
+    <!-- Обезьяна 2 -->
+    <div class="monkey-card" onclick="alert('ВНИМАНИЕ: Горилла уже идет к вам домой. Дверь открывать не обязательно.')">
+       <img src="img/monkey1.jpg" alt="Горилла">
+
+        <div class="info">
+            <h3>Горилла-вышибала-Макс</h3>
+            <p>Решит любые вопросы с соседями. Очень молчалив.</p>
+            <p class="price">1 000 000 бананов</p>
+            <button class="buy-button">АРЕНДОВАТЬ</button>
+        </div>
+    </div>
+
+    <!-- Обезьяна 3 -->
+    <div class="monkey-card" onclick="alert('Эта обезьяна слишком крутая для вас. Попробуйте в 2027 году.')">
+        <div class="badge">VIP</div>
+        <img src="img/monkey3.png" alt="Инвестор-Шимпанзе">
+
+        <div class="info">
+            <h3>Инвестор-Шимпанзе-Азиз</h3>
+            <p>Выбирает акции случайным образом. Доходность выше, чем у банков.</p>
+            <p class="price">Твоя душа</p>
+            <button class="buy-button">ИНВЕСТИРОВАТЬ</button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 ООО "Планета Обезьян". Все права защищены бананами. Ни одна макака при верстке не пострадала.C душой соколов.</p>
+</footer>
+
+</body>
+</html>
